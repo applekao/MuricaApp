@@ -1,0 +1,156 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin:0px;
+	overflow: hidden;
+}
+
+#background{ 
+	background-image: url("images/map.jpg");
+	height: 100%;
+	width:100%;
+	z-index: -2;
+	position: fixed;
+	opacity: 0.1;
+	background-position: center;
+	background-size: auto 70%;
+}
+
+#circle{
+	top:auto;
+	bottom: 4.5%;
+	left: 0px;
+	right: 0px;
+	background-color: #65d1e5;
+	border-radius:51%;
+	margin: auto;
+	position: fixed;
+	background-image: url("images/cross.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border:solid 2px #FFF;
+	z-index: 99;
+	cursor: pointer;
+    -webkit-transform: rotateZ(0deg);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+#MenuFan{
+width: 140%;
+/*background-image: url("images/wheel.svg");
+background-color: rgba(0,0,0,0.2);*/
+background-size: auto 83%;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 51%;
+left:-20%;
+bottom:-55%;
+/*right:0px;*/
+position: fixed;
+z-index:98;
+opacity: 0;
+-webkit-transition:opacity 0.5s ease-out;
+-webkit-transform:rotateZ(40deg);
+}
+
+#menuRotateController{
+	//display: hidden;
+	width: -10px;
+	height: 20px;
+	background-color: #FF9900;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+#footer{ 
+	overflow:visible;
+	background-image: url("images/footer.png");
+	background-position: center;
+	background-size:100% 100%;
+	width:100%;
+	height:18%;
+	top:auto;
+	bottom: 0px;
+	position:fixed;
+	background-repeat: no-repeat;
+	z-index:1;
+
+}
+
+@-webkit-keyframes searchCircleAni
+{
+
+0%   {
+	background-size: auto 70%;
+	opacity:0.4;
+}
+
+90% {
+	background-size: auto 100%;
+	opacity:0;
+}
+
+100% {
+	background-size: auto 70%;
+	opacity:0;
+}
+
+}
+
+#searchCircle{
+	position: relative;
+	margin: auto;
+	left:0px;
+	right:0px;
+	height:60%;
+	width:100%;
+	top:13%;
+	background-image: url("images/searchCircle.svg");
+	background-repeat: no-repeat;
+	background-size: auto 40%;
+	background-position: center;
+	-webkit-animation: searchCircleAni 3s infinite;
+}
+
+#searchCircle:hover{
+	background-size: auto 80%;
+}
+
+
+#statusText{
+	width: 100%;
+	text-align: center;
+	margin-top:-40%;
+}
+
+.itemCircle{
+	padding: 0px;
+	height:9.8%;
+	width: 9.8%;
+	position: relative;
+	right:0px;
+	left:0px;
+	margin:auto;
+}
+
+.itemCircleInner{
+	position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 0px;
+	text-align:center;
+	font-size: 30px;
+	border-radius: 51%;
+	background-color: rgba(0,0,0,0.1);
+	color: #FFF;
+	margin: auto;
+	height:30px;
+	width: 30px;
+	overflow: hidden;
+}
+
+
